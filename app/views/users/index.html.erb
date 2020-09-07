@@ -1,8 +1,28 @@
-<em><h1>Welcome</h1></em>
-<%# <% <p>Find me in app/views/users/new.html.erb</p> %> 
-<hr>
-<ul>
-  <% @users.each do |user| %>
- <li><%= link_to user.name, user %></li>
-  <% end %>
-</ul>
+<em><h1>Welcome to booking A band</h1></em>
+
+
+
+
+
+<em><h2> Sign up </h2><em>
+
+ <form action="/action_page.php">
+  <label for="fname">Name:</label>
+  <br>
+  <input type="text" id="fname" name="fname" value="John">
+  <br>
+  <label for="lname">email:</label>
+  <br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+<br>
+
+
+<li><a href= "/user/9"><%= user.name.</a>
+</a>
+
+ 
+# <%# <% <p>Find me in app/views/users/new.html.erb</p>  

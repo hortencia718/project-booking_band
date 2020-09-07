@@ -6,9 +6,10 @@ class UsersController < ApplicationController
     # @bookings =Bookings.all
   end
   
-  def index
-    #  @user = Users.all
-  end
+   def index
+        @users = User.all
+        #  render :index
+   end
 
 
    def create
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
    end
 
    def show
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
    end
 
 
