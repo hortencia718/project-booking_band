@@ -1,0 +1,8 @@
+<em><h1>Welcome</h1></em>
+<%# <% <p>Find me in app/views/users/new.html.erb</p> %> 
+<hr>
+<ul>
+  <% @users.each do |user| %>
+ <li><%= link_to user.name, user %></li>
+  <% end %>
+</ul>
