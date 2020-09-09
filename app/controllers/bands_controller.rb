@@ -12,7 +12,7 @@ class BandsController < ApplicationController
   end
   
   def show
-    
+    @bands = Band.all
   end
 
   def index
