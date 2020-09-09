@@ -1,0 +1,50 @@
+<h1>Bands & genres.....</h1>
+
+
+<ul>
+<div class ="container >
+<!-- jumbotron intro -->
+<div class="topnav">
+  <a class="active" href="/home">Home</a>
+  <br>
+  <a href="/bookings">Bookings</a>
+  <br>
+  <a href="/genre">Gengenre</a>
+  <br>
+  <a href="/signup">Sign Up</a>
+  </ul>
+</div>
+</div>
+<p><h2>band genre</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean. 
+Amet est placerat in egestas erat imperdiet sed euismod nisi.
+ Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. 
+ Fermentum posuere urna nec tincidunt praesent. Purus in mollis nunc sed id semper risus in. 
+ Urna duis convallis convallis tellus. A condimentum vitae sapien pellentesque habitant. 
+ Dolor purus non enim praesent elementum facilisis. Nunc lobortis mattis aliquam faucibus purus in. 
+ Congue mauris rhoncus aenean vel. Malesuada fames ac turpis egestas integer eget aliquet. 
+ Enim praesent elementum facilisis leo vel. Purus ut faucibus pulvinar elementum integer enim neque volutpat. 
+ Nisi scelerisque eu ultrices vitae auctor eu augue.
+
+</p>
+
+
+<div class="container">
+<%= form_for (@bands) do |f| %>
+  <%= f.label :name %>
+  <br>
+  <%%= f.text_field :name %>
+  <br>
+  <%%= f.collection_select :user_id, Bands.all, :id, :name %>
+
+  <%= f.label :genre %>
+  <br>
+  <%%= f.text_field :genre %>
+  <br>
+  <%%= f.collection_select :genre_id, Gengenre.all, :id, :genre %>
+  <br>
+  <%= f.submit %>
+<% end %> 
+</div>
+ 

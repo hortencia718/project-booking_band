@@ -1,12 +1,13 @@
 class BookingsController < ApplicationController
 
     def new
-          @bookings = Bookings.all
+          @booking = Booking.new
         # @users =Users.all
     end
   
      def create
-        @bookings= Booking.create(booking_params(:name))
+
+        @booking= Booking.create!(booking_params)
      end
   
      def index
@@ -16,6 +17,8 @@ class BookingsController < ApplicationController
      end
   
      def update
+      @booking.update(params[:id])
+      redirect_to new_users_path
      end
   
      def show
@@ -30,7 +33,7 @@ class BookingsController < ApplicationController
      end
   
      private 
-     def booking_params(*args)
-      params.require(:booking).permit(*args)
+     def booking_params
+      params.require(:booking).permit(:occasion,:band_id)
      end
 end

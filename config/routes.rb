@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 #  HTTP VERB "/URL", TO: "controllerNAME#method"
 #  GET, POST, PATCH, PUT, DELETE
 
-
+    #  get 'users/', to:'users#home', as: 'users'
     # get '/user', to: 'users#index'
      get '/user/:id', to:'users#show'
 #  post '/users', to:'users#create'
@@ -26,20 +26,16 @@ Rails.application.routes.draw do
 # patch '/bookings/:id', to:'bookings#update'
 
 
-# get '/band', to: 'bands#index', as: 'bands'
+ get '/band', to: 'bands#index', as: 'bands'
 # post '/bands', to:'bands#create'
 # get '/band/:id', to:'bands#show', as: 'band'
 # get '/bands/:id/edit', to:'bands#edit', as: 'edit_band
 # '
 # patch '/bands/:id', to:'bands#update'
 
-
-
 resources :bookings
 resources :bands
 resources :band_members
 resources :users
-
-
 
 end

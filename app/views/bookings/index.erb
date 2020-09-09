@@ -1,10 +1,10 @@
 
 <em><h1>Bookings</h1></em>
 
-<%# <ul> %>
+
   <% @bookings.each do |booking| %>
-     <li><%= "Booking #{booking.name},booking_path(booking)}"%></li>
+    <h4><li> <%=link_to booking.occasion, booking_path(booking) %></li></h4>
   <% end %>
- <%# </ul>   %>
+  
 
  

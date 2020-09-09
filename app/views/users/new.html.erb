@@ -1,6 +1,16 @@
-<em><h1>New Booking</h1><em>
 
- <%# <p><a href ="https://images.app.goo.gl/XXpW2JbzCQjddzP89"></a>bandphoto</p> %>
+  <div class="bg-img">
+  <div class="container">
+     <div class="topnav">
+       <%# <a href="/home">Home</a> %>
+       <a href="/bookings">Bookings</a>
+       <a href="/band">Band</a>
+       <a href="/signup">Sign up</a>
+     </div>
+   </div>
+ </div>  
+
+
 
 <div class="container-form">
     <h1 class="signup">SignUp</h1>
@@ -15,3 +25,11 @@
     <p><%= f.submit %></p>
     <%end%>
 
+
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>

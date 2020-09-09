@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
 
     def current_user
-        @current_user ||= User.find_by(id: booking[:user_id])
+     byebug
+        @current_user ||= User.find_by(id: params[:user_id])
       end
       
       def logged_in?

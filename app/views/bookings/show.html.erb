@@ -1,3 +1,20 @@
 <em><h1>Bookings Details</h1></em>
 
 
+
+<div class="container">
+<%= form_for (@booking) do |f| %>
+<br>
+   <%= f.label :occasion %>
+  
+   <br>
+   <%= f.text_field :occasion %>
+   <br>
+     <%= f.label :band %> 
+  
+   <%= f.collection_select :band_id, Band.all, :id, :name_genre %> 
+   <%# <button class="button">Click Me</button> %>
+    <%= f.submit "confirm booking", class:"button"%> 
+<% end %> 
+  </div>
+ 
