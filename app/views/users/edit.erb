@@ -1,1 +1,11 @@
 <h1>booking details</h1>
+
+<%= form_for @users do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :email %><br />
+
+  <%= f.label :occasion %>:
+  <%= f.text_field :last_name %><br />
+
+  <%= f.submit %>
+<% end %>

@@ -21,7 +21,10 @@ class BandMembersController < ApplicationController
   def destroy
   end
 
-
+  private 
+  def band_members_params(*args)
+   params.require(:band_members).permit(*args)
+  end
 
 
 

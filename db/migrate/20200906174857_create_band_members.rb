@@ -3,8 +3,8 @@ class CreateBandMembers < ActiveRecord::Migration[6.0]
     create_table :band_members do |t|
       t.string :instrument
       t.integer :age
-      t.string :alien
-      # t.band :belongs_to
+      t.boolean :alien
+      t.belongs_to :band
 
       t.timestamps
     end

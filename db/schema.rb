@@ -15,9 +15,11 @@ ActiveRecord::Schema.define(version: 2020_09_06_174857) do
   create_table "band_members", force: :cascade do |t|
     t.string "instrument"
     t.integer "age"
-    t.string "alien"
+    t.boolean "alien"
+    t.integer "band_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["band_id"], name: "index_band_members_on_band_id"
   end
 
   create_table "bands", force: :cascade do |t|
@@ -29,7 +31,6 @@ ActiveRecord::Schema.define(version: 2020_09_06_174857) do
 
   create_table "bookings", force: :cascade do |t|
     t.string "occasion"
-    t.string "genre"
     t.integer "user_id", null: false
     t.integer "band_id", null: false
     t.datetime "created_at", precision: 6, null: false

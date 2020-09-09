@@ -1,5 +1,17 @@
 <em><h1>New Booking</h1><em>
 
-<h3>form goes here for users</h3>
+ <%# <p><a href ="https://images.app.goo.gl/XXpW2JbzCQjddzP89"></a>bandphoto</p> %>
 
-<%# form_for %>
+<div class="container-form">
+    <h1 class="signup">SignUp</h1>
+    <br>
+    <p><%= form_for @user do |f| %></p>
+    <p class= "label"><%= f.label :name %></p>
+    <p><%= f.text_field :name%></p>
+    <br>
+    <p class= "label"><%= f.label :email %></p>
+     <p><%= f.text_field :email, :class => "new-todo", :placeholder => "Register with your email!!" %></p>
+    <br>
+    <p><%= f.submit %></p>
+    <%end%>
+

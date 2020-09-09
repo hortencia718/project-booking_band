@@ -1,16 +1,18 @@
 class BookingsController < ApplicationController
 
     def new
-        #  @bookings = Bookings.all
+          @bookings = Bookings.all
         # @users =Users.all
     end
   
      def create
+        @bookings= Booking.create(booking_params(:name))
      end
   
      def index
-        # byebug
-      @booking = Booking.all
+        #  byebug
+      @bookings = Booking.all
+      render :index
      end
   
      def update
@@ -18,7 +20,7 @@ class BookingsController < ApplicationController
   
      def show
         # byebug
-        @booking = Booking.find()
+        @booking = Booking.find(params[:id])
      end
   
      def edit
@@ -27,4 +29,8 @@ class BookingsController < ApplicationController
      def destroy
      end
   
+     private 
+     def booking_params(*args)
+      params.require(:booking).permit(*args)
+     end
 end

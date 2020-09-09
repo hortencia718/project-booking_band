@@ -1,0 +1,17 @@
+<h2>Book A Band for you Occasion<h2>
+
+<div class="container">
+<%= form_for (@bookings) do |f| %>
+  <%= f.label :occasion %>
+  <= f.collection_select :user_id, Occasion.all, :id, :name %>
+
+
+  <%= f.label :band %>
+  <= f.collection_select :band_id, Band.all, :id, :genre %>
+  <%= f.submit %>
+<% end %> 
+ 
+
+ creating a form to have the user with a drop
+ down menu select the occasion, and a band genre of their choice
+ need to create the date and time .
