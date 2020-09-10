@@ -14,24 +14,31 @@
  *= require_self
  */
 
+
+
   body {
         margin: 100px;
+        color:rgb(155, 32, 59);
+        
      }
-     body {
-         color:rgb(190, 211, 223);
-     }
-    
+      /* body {
+         color:rgb(104, 184, 230);
+     }  */
+     
      h1 {
          font-family: Verdana;
          color: rgb(37, 56, 165);
          font-size:50px;
      }
     
-     .topnav {
-         background-color: #333;
+     /* .topnav { */
+         /* background-color: #7180d6;
          overflow: hidden;
        }
-      
+       */
+    
+
+
        /* Style the links inside the navigation bar */
        .topnav a {
          float: left;
@@ -39,17 +46,20 @@
          text-align: center;
          padding: 14px 16px;
          text-decoration: none;
-         font-size: 17px;
+         font-size: 19px;
        }
       
        /* Change the color of links on hover */
-       .topnav a:hover {
+       /* .topnav a:hover {
          background-color: #ddd;
          color: black;
        }
-      
+       */
        /* Add a color to the active/current link */
        .topnav a.active {
-         background-color: #5f85b8;
+         background-color: #377fdd;
          color: white;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
        }
+
+  

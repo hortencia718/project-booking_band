@@ -30,10 +30,6 @@ class UsersController < ApplicationController
     end
   end
     
-#   def home
-#    NilClass.instance_methods.include?
-#   end
-
 
    def show
      

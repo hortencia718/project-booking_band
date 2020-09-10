@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/home'
     # resources :users, only: [:new, :create, :show]
   # get 'band_members/new'
   # get 'bands/new'
@@ -32,6 +33,8 @@ Rails.application.routes.draw do
 # get '/bands/:id/edit', to:'bands#edit', as: 'edit_band
 # '
 # patch '/bands/:id', to:'bands#update'
+ root to: "pages#home"
+
 
 resources :bookings
 resources :bands

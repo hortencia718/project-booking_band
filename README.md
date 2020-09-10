@@ -9,16 +9,20 @@ Able to see a list of all the bookings
 Able to see a single student and all the ducks owned by that student
 
 Able to sign in a new user 
+* Yes you are able to sign in/ create new user
 
-Able to edit a user's booking 
+Able to book an occasion in booking 
+Yes able to book an ocassion
 
 Able to see a list of all the bands
+about the band page 
 
 Able to see a single booking and see all its details
+some what yes, 
 
-Able to edit a booking and its details
 
-Able to cancel/delete a band for an occasion  
+
+ 
 
 
 
