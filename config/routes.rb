@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
     #  get 'users/', to:'users#home', as: 'users'
     # get '/user', to: 'users#index'
-     get '/user/:id', to:'users#show'
+     get '/users/:id', to:'users#show'
 #  post '/users', to:'users#create'
 #  get '/users/:id', to:'users#edit', as:'user_id'
 #  put '/users/:id', to:'users#update', as:'dateup_user'
@@ -27,7 +27,7 @@ Rails.application.routes.draw do
 # patch '/bookings/:id', to:'bookings#update'
 
 
- get '/band', to: 'bands#index', as: 'bands'
+ get '/bands', to: 'bands#index', as: 'bands'
 # post '/bands', to:'bands#create'
 # get '/band/:id', to:'bands#show', as: 'band'
 # get '/bands/:id/edit', to:'bands#edit', as: 'edit_band

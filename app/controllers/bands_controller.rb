@@ -17,7 +17,7 @@ class BandsController < ApplicationController
 
   def index
     @bands = Band.all
-    redirect_booking_path
+    # redirect_to booking_path
   end
 
   def destroy

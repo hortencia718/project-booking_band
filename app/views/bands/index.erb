@@ -1,6 +1,6 @@
+<%# 
 
-
-<h1>Bands</h1>
+<%# <h1>Bands</h1>
 
 
 <ul>
@@ -8,11 +8,11 @@
 <!-- jumbotron intro -->
 <div class="topnav">
   <a class="active" href="/home">Home</a>
-  <br>
+ 
   <a href="/bookings">Bookings</a>
-  <br>
+ 
   <a href="/genre">Genre</a>
-  <br>
+ 
   <a href="/signup">SignUp</a>
   </ul>
 </div>
@@ -34,19 +34,19 @@ Amet est placerat in egestas erat imperdiet sed euismod nisi.
 
 <div class="container">
 <%= form_for (@bands) do |f| %>
-  <%= f.label :name %>
-  <br>
-  <%%= f.text_field :name %>
-  <br>
-  <%%= f.collection_select :user_id, Bands.all, :id, :name %>
-
-  <%= f.label :genre %>
-  <br>
-  <%%= f.text_field :genre %>
-  <br>
-  <%%= f.collection_select :genre_id, Gengenre.all, :id, :genre %>
-  <br>
-  <%= f.submit %>
-<% end %> 
-</div>
+  <%# <%= f.label :name %>
  
+  <%#= f.text_field :name %>
+ 
+  <%#= f.collection_select :user_id, Bands.all, :id, :name %>
+
+  <%#= f.label :genre %>
+ 
+  <%#= f.text_field :genre %>
+ 
+  <%#= f.collection_select :genre_id, Gengenre.all, :id, :genre %>
+ 
+  <%#= f.submit %>
+<%# <% end %>  
+<%# </div> %>  
+  
